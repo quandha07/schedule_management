@@ -7,7 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class StudentManagement {
@@ -18,7 +17,7 @@ public class StudentManagement {
         PreparedStatement ps = conn.prepareStatement("select * from student");
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
-            Student student = new Student(rs.getInt("student_id"), rs.getString("student_name"), rs.getString("student_date"), rs.getInt("schedule_id"));
+            Student student = new Student(rs.getInt("student_id"), rs.getString("student_name"), rs.getString("student_date"), rs.getInt("class_id"));
             students.add(student);
         }
         return students;

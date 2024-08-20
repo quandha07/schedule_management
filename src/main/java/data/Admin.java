@@ -5,10 +5,10 @@ import java.util.List;
 public class Admin {
     private final List<Teacher> teacherList;
     private final List<Student> studentList;
-    private final List<Class> classList;
+    private final List<myClass> classList;
     private final List<Schedule> scheduleList;
 
-    public Admin(List<Teacher> teacherList, List<Student> studentList, List<Class> classList, List<Schedule> scheduleList) {
+    public Admin(List<Teacher> teacherList, List<Student> studentList, List<myClass> classList, List<Schedule> scheduleList) {
         this.teacherList = teacherList;
         this.studentList = studentList;
         this.classList = classList;
@@ -23,7 +23,7 @@ public class Admin {
         return studentList;
     }
 
-    public List<Class> getClassList() {
+    public List<myClass> getClassList() {
         return classList;
     }
 

@@ -4,13 +4,13 @@ public class Student {
     private int student_id;
     private String student_name;
     private String student_date;
-    private int schedule_id;
+    private int class_id;
 
-    public Student(int student_id, String student_name, String student_date, int schedule_id) {
+    public Student(int student_id, String student_name, String student_date, int class_id) {
         this.student_id = student_id;
         this.student_name = student_name;
         this.student_date = student_date;
-        this.schedule_id = schedule_id;
+        this.class_id = class_id;
     }
 
     public Student() {
@@ -41,12 +41,12 @@ public class Student {
         this.student_date = student_date;
     }
 
-    public int getSchedule_id() {
-        return schedule_id;
+    public int getClass_id() {
+        return class_id;
     }
 
-    public void setSchedule_id(int schedule) {
-        this.schedule_id = schedule;
+    public void setClass_id(int class_id) {
+        this.class_id = class_id;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Student {
                 "student_id=" + student_id +
                 ", student_name='" + student_name + '\'' +
                 ", student_date=" + student_date +
-                ", schedule=" + schedule_id +
+                ", schedule=" + class_id +
                 '}';
     }
 }

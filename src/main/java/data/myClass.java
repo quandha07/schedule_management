@@ -1,13 +1,13 @@
 package data;
 
-public class Class {
+public class myClass {
     private int class_id;
     private String class_name;
 
-    public Class() {
+    public myClass() {
     }
 
-    public Class(int class_id, String class_name) {
+    public myClass(int class_id, String class_name) {
         this.class_id = class_id;
         this.class_name = class_name;
     }

@@ -1,9 +1,9 @@
 package controller;
 
-import data.Class;
 import data.Schedule;
 import data.Student;
 import data.Teacher;
+import data.myClass;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -54,7 +54,7 @@ public class AdminManagement {
     }
 
 //    Create Class
-    public void addClass(Connection conn, Class myClass) throws SQLException {
+    public void addClass(Connection conn, myClass myClass) throws SQLException {
         PreparedStatement statement = conn.prepareStatement("INSERT INTO `class` (`class_id`, `class_name`) VALUES (?,?)`)");
 
         myClass.setClass_id(myClass.getClass_id());
@@ -67,7 +67,7 @@ public class AdminManagement {
     }
 
 //    Update Class
-    public void updateClass(Connection conn, Class myClass) throws SQLException {
+    public void updateClass(Connection conn, myClass myClass) throws SQLException {
         PreparedStatement statement = conn.prepareStatement("UPDATE `class` SET `class_name` = ? WHERE `class_id` = ?");
         myClass.setClass_name(new Scanner(System.in).nextLine());
         statement.setString(1, myClass.getClass_name());
@@ -78,7 +78,7 @@ public class AdminManagement {
     }
 
 //    Delete Class
-    public void deleteClass(Connection conn, Class myClass) throws SQLException {
+    public void deleteClass(Connection conn, myClass myClass) throws SQLException {
         PreparedStatement statement = conn.prepareStatement("DELETE FROM `class` WHERE `class_name` = ?");
         myClass.setClass_name(new Scanner(System.in).nextLine());
         statement.setString(1, myClass.getClass_name());
@@ -131,7 +131,7 @@ public class AdminManagement {
 
     //Create Student
     public void addStudent(Connection conn, Student myStudent) throws SQLException {
-        PreparedStatement statement = conn.prepareStatement("INSERT INTO `student` (`student_id`, `student_name`, `student_date`, `schedule_id`)");
+        PreparedStatement statement = conn.prepareStatement("INSERT INTO `student` (`student_id`, `student_name`, `student_date`, `class_id`)");
         myStudent.setStudent_id(myStudent.getStudent_id());
         statement.setInt(1, myStudent.getStudent_id());
 
@@ -141,20 +141,20 @@ public class AdminManagement {
         myStudent.setStudent_date(new Scanner(System.in).nextLine());
         statement.setString(3, myStudent.getStudent_date());
 
-        myStudent.setSchedule_id(new Scanner(System.in).nextInt());
-        statement.setInt(4, myStudent.getSchedule_id());
+        myStudent.setClass_id(new Scanner(System.in).nextInt());
+        statement.setInt(4, myStudent.getClass_id());
         statement.executeUpdate();
     }
 
     //Update Student
     public void updateStudent(Connection conn, Student myStudent) throws SQLException {
-        PreparedStatement statement = conn.prepareStatement("UPDATE `student` SET `student_name` = ?, `student_date` = ?, `schedule_id` = ? WHERE (`student_id` = ?)");
+        PreparedStatement statement = conn.prepareStatement("UPDATE `student` SET `student_name` = ?, `student_date` = ?, `class_id` = ? WHERE (`student_id` = ?)");
         myStudent.setStudent_name(new Scanner(System.in).nextLine());
         statement.setString(1, myStudent.getStudent_name());
         myStudent.setStudent_date(new Scanner(System.in).nextLine());
         statement.setString(2, myStudent.getStudent_date());
-        myStudent.setSchedule_id(new Scanner(System.in).nextInt());
-        statement.setInt(3, myStudent.getSchedule_id());
+        myStudent.setClass_id(new Scanner(System.in).nextInt());
+        statement.setInt(3, myStudent.getClass_id());
         myStudent.setStudent_id(new Scanner(System.in).nextInt());
         statement.setInt(4, myStudent.getStudent_id());
         statement.executeUpdate();

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec6984c3-e7ca-40f8-a2a1-d287b592a04c" name="Changes" comment="" />
+    <list default="true" id="ec6984c3-e7ca-40f8-a2a1-d287b592a04c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ClassManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ClassManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DataExportTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DataExportTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ScheduleManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ScheduleManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StudentManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/myClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/myClass.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,27 +28,81 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "quandha07"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/quandha07/schedule_management.git",
+    "accountId": "91ff580f-60f5-4fbf-9cc7-b096ea4faa80"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kjeDwbxK569LngKulcAsYh4iaQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.school_management_system [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/JavaBase/bank-simulator2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaBase\school_management_system\src\main\java\data" />
+      <recent name="C:\JavaBase\school_management_system\src\main\java\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="mysqldatabase" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="school_management_system.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,11 +119,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723801297197</updated>
-      <workItem from="1723801298241" duration="3000" />
+      <workItem from="1723801298241" duration="1779000" />
+      <workItem from="1723829730967" duration="5696000" />
+      <workItem from="1723863808713" duration="2178000" />
+      <workItem from="1723889313623" duration="2660000" />
+      <workItem from="1723902722857" duration="8857000" />
+      <workItem from="1723970402530" duration="1790000" />
+      <workItem from="1723997794033" duration="1000" />
+      <workItem from="1723999868376" duration="2216000" />
+      <workItem from="1724088769810" duration="2982000" />
+      <workItem from="1724094004899" duration="1902000" />
+      <workItem from="1724135989122" duration="3662000" />
+      <workItem from="1724160986660" duration="5732000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
